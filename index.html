@@ -626,8 +626,14 @@ rd.innerHTML='<audio id="rdi" controls autoplay src="'+sg+'" ></audio>'
 document.getElementById("rdi").play();
 document.getElementById("um").style.display="block";
 document.getElementById("bb").style.display="none";
-
 }
+var ntb=0;var table = document.getElementById("table");
+    var rows = table.getElementsByTagName("tr");
+	for (var i=0;i<rows.length;i++)
+	{ rows[i].onclick=function(e){ rows[ntb].style.backgroundColor="white"
+	this.style.backgroundColor='orange';
+	ntb=this.rowIndex;
+	}}		
 </script>						
 </body>
 </html>
