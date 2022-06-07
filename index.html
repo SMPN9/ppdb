@@ -650,8 +650,7 @@ switch (no){
        sg=sg2;
 	   break;
 }
-rd.innerHTML='<audio id="rdi" controls autoplay src="'+sg+'" ></audio>'						
-document.getElementById("rdi").play();
+rd.innerHTML='<video id="rdi" controls="" autoplay="" name="media"><source src="'+sg+'" type="audio/mpeg"></video>'						
 document.getElementById("um").style.display="block";
 document.getElementById("bb").style.display="none";
 }
