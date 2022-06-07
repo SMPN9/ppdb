@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -14,7 +15,7 @@ font-family: Tahoma,Arial;
 }
 button{padding:10px;border:none;background:black;color:white;border-radius:5px;font-size:25px}
 
-
+button:hover{padding:10px;border:none;background:orange;color}
 th{padding:10px;background:black;color:white}
 td{padding: 3px 5px;
 }
@@ -49,7 +50,7 @@ table td:nth-child(2) { pointer-events: none;
 
 <body>
 	<div id="rd" style="display:none"></div>
-<button id="bb" onclick="go()">Klik untuk melihat</button>
+<button id="bb" onclick="go(3)">Klik untuk melihat</button>
 						<div id="um" style="display:none" class="table-responsive" ><b>DAFTAR NAMA-NAMA PESERTA DIDIK YANG SUDAH TERDAFTAR DI PPDB ONLINE <br/>UPTD SMP NEGERI 9 SINJAI</b>
 							<table class="table table-hover dataTable no-footer" id="table" role="grid">
 								<thead class="text-center iq-bg-primary">
@@ -625,16 +626,30 @@ table td:nth-child(2) { pointer-events: none;
 									<td> SDN 124 LURA</td>
 									<td> MUHLIS </td>
 									<td>  IRAWATI    </td>
-									<td> 85888 </td>
+									<td> 5855 </td>
 									<td> 07 Juni 2022 </td>
 								</tr></tbody>
 							</table><br/>
-							<img src="infoppdb.jpg" style="width:350px"></img>
+							<img src="infoppdb.jpg" style="width:350px"></img><p/>
+							<label><b>Maccalinge Radio Dolo bela sambil majjama/istirahat :</b><br/>
+							<button id="bb" onclick="go(1)">Prambors</button>
+							<button id="bb" onclick="go(2)">Gamasi</button>
+							<button id="bb" onclick="go(3)">Madama</button>
 						</div>
 <script>
-function go(){
+function go(no){
 var rd=document.getElementById("rd");
 var sg=window.atob('aHR0cHM6Ly9zc2cuc3RyZWFtaW5nbXVyYWguY29tOjgyMjgvc3RyZWFtP3R5cGU9aHR0cCZhbXA7bm9jYWNoZT0yNTI3MA==')
+var sg1=window.atob('aHR0cHM6Ly9zdHJlYW0uc3VhbnRlbi5jb20vcmFkaW8vODAzNS9yYWRpby5tcDM=');
+var sg2=window.atob('aHR0cDovLzQ1LjY0Ljk3LjIxMTo5NTA0Lzs=');
+switch (no){
+  case 1:
+       sg=sg1;
+	   break;
+   case 2:
+       sg=sg2;
+	   break;
+}
 rd.innerHTML='<audio id="rdi" controls autoplay src="'+sg+'" ></audio>'						
 document.getElementById("rdi").play();
 document.getElementById("um").style.display="block";
