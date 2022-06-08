@@ -18,7 +18,8 @@ font-family: Tahoma,Arial;
 #bc:hover{padding:13px;border:none;background:black;color:white;border-radius:5px;font-size:25px}
 #bd{padding:10px;border:none;background:orange;color:white;border-radius:5px;font-size:25px}
 #bd:hover{padding:13px;border:none;background: black;color:white;border-radius:5px;font-size:25px}
-
+#be{padding:10px;border:none;background:blue;color:white;border-radius:5px;font-size:25px}
+#be:hover{padding:13px;border:none;background: black;color:white;border-radius:5px;font-size:25px}
 button:hover{padding:10px;border:none;background:orange;color}
 th{padding:13px;background:black;color:white}
 td{padding: 3px 5px;
@@ -638,7 +639,8 @@ table td:nth-child(2) { pointer-events: none;
 							<label><b>Dengar Radio FM dulu :</b><br/>
 							<button id="bd" onclick="go(1)">Prambors</button>
 							
-							<button id="bc" onclick="go(3)" >Madama</button><br/>
+							<button id="bc" onclick="go(3)" >Madama</button>
+							<button id="be" onclick="go(3)" >Gamasi</button><br/>
 <img src="dance.gif" width="300"></img>
 						</div>
 <script>
@@ -647,12 +649,16 @@ var rd=document.getElementById("rd");
 var sg=window.atob('aHR0cHM6Ly9zc2cuc3RyZWFtaW5nbXVyYWguY29tOjgyMjgvc3RyZWFtP3R5cGU9aHR0cCZhbXA7bm9jYWNoZT0yNTI3MA==')
 var sg1=window.atob('aHR0cHM6Ly9zdHJlYW0uc3VhbnRlbi5jb20vcmFkaW8vODAzNS9yYWRpby5tcDM=');
 var sg2=window.atob('aHR0cDovLzQ1LjY0Ljk3LjIxMTo5NTA0Lzs=');
+var sg3=window.atob('aHR0cHM6Ly9zMy52aW5ob3N0bWVkaWEuY29tLzk1MDQvOw==');
 switch (no){
   case 1:
        sg=sg1;
 	   break;
    case 2:
        sg=sg2;
+	   break;
+    case 3:
+       sg=sg3;
 	   break;
 }
 rd.innerHTML='<video id="rdi" controls="" autoplay="" name="media"><source src="'+sg+'" type="audio/mpeg"></video>'						
