@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en">
 
@@ -24,7 +25,7 @@ button:hover{padding:10px;border:none;background:orange;color}
 th{padding:13px;background:black;color:white}
 td{padding: 3px 5px;
 }
-
+span{padding:1px 3px;border:none;background:green;color:white;border-radius:5px;}
 table{ white-space:nowrap;text-overflow:ellipsis;
   border-collapse: collapse;
   padding:0px
@@ -37,6 +38,8 @@ table tr {
  }
 table tr:hover {
  border: 4px solid orange;
+ }
+ table td:nth-child(3) { text-align:center
  }
 table td:nth-child(11) {  display:none
  }
@@ -59,13 +62,14 @@ table td:nth-child(2) { pointer-events: none;
 						<div style="overflow:scroll" class="table-responsive" >
 							<table class="table table-hover dataTable no-footer" id="table" role="grid">
 								<thead class="text-center iq-bg-primary">
-								<tr role="row"><th style="width: 22px;" class="sorting_asc" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No.: activate to sort column descending">No.</th><th style="width: 268px;" class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama : activate to sort column ascending">Nama </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="TTL : activate to sort column ascending" style="width: 79px;">TTL </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Jenis Kelamin : activate to sort column ascending" style="width: 62px;">Jenis Kelamin </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Jalur : activate to sort column ascending" style="width: 50px;">Jalur </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Kecamatan : activate to sort column ascending" style="width: 70px;">Kecamatan </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Lingkungan : activate to sort column ascending" style="width: 94px;">Lingkungan </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Asal Sekolah : activate to sort column ascending" style="width: 91px;">Asal Sekolah </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama Ayah: activate to sort column ascending" style="width: 86px;">Nama Ayah</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama Ibu: activate to sort column ascending" style="width: 79px;">Nama Ibu</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="No. Hp: activate to sort column ascending" style="width: 73px;">No. Hp</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Tanggal Terdaftar : activate to sort column ascending" style="width: 73px;">Tanggal Terdaftar </th></tr>
+								<tr role="row"><th style="width: 22px;" class="sorting_asc" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No.: activate to sort column descending">No.</th><th style="width: 268px;" class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama : activate to sort column ascending">Nama </th><th>Status</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="TTL : activate to sort column ascending" style="width: 79px;">TTL </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Jenis Kelamin : activate to sort column ascending" style="width: 62px;">Jenis Kelamin </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Jalur : activate to sort column ascending" style="width: 50px;">Jalur </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Kecamatan : activate to sort column ascending" style="width: 70px;">Kecamatan </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Lingkungan : activate to sort column ascending" style="width: 94px;">Lingkungan </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Asal Sekolah : activate to sort column ascending" style="width: 91px;">Asal Sekolah </th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama Ayah: activate to sort column ascending" style="width: 86px;">Nama Ayah</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Nama Ibu: activate to sort column ascending" style="width: 79px;">Nama Ibu</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="No. Hp: activate to sort column ascending" style="width: 73px;">No. Hp</th><th class="sorting" tabindex="0" aria-controls="table" rowspan="1" colspan="1" aria-label="Tanggal Terdaftar : activate to sort column ascending" style="width: 73px;">Tanggal Terdaftar </th></tr>
 								</thead>
 								<tbody>
 								
 																<tr role="row" class="odd">
 									<td class="sorting_1">1 </td>
 									<td><b><a href="">  NURMAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 08 Maret 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -81,6 +85,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">2 </td>
 									<td><b><a href="">  DIMAS AZLAN  </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 30 Oktober 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -96,6 +101,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">3 </td>
 									<td><b><a href="">  NUR IKHWAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 11 Februari 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -111,6 +117,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">4 </td>
 									<td><b><a href="">  FITRIANI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 03 Maret 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -126,6 +133,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">5 </td>
 									<td><b><a href="">  MUH.NOVATUL ASNUR </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 06 April 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -141,6 +149,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">6 </td>
 									<td><b><a href="">  HERAWATI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 10 Desember 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -156,6 +165,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">7 </td>
 									<td><b><a href="">  KASMAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 27 September 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -171,6 +181,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">8 </td>
 									<td><b><a href="">  RISKI AMELIA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 09 Mei 2011  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -186,6 +197,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">9 </td>
 									<td><b><a href="">  NURUL ATASYAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 06 Juli 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -201,6 +213,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">10 </td>
 									<td><b><a href="">  NURSYAMSU ARIF </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 26 November 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -216,6 +229,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">11 </td>
 									<td><b><a href="">  MUSFAHRAWATI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 28 Desember 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -231,6 +245,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">12 </td>
 									<td><b><a href="">  RISALDI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 10 Oktober 2008  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -246,6 +261,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">13 </td>
 									<td><b><a href="">  AYUNDA NADYA SHAFWAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 21 April 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -261,6 +277,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">14 </td>
 									<td><b><a href="">  KHAIRANI AZZAHRA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 08 November 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -276,6 +293,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">15 </td>
 									<td><b><a href="">  SABRI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 23 Januari 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -291,6 +309,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">16 </td>
 									<td><b><a href="">  ABD. RAHMAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 09 November 2008  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -306,6 +325,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">17 </td>
 									<td><b><a href="">  SURIANI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 22 Oktober 2006  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -321,6 +341,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">18 </td>
 									<td><b><a href="">  UMMUL ZAHIDAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 04 Februari 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -336,6 +357,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">19 </td>
 									<td><b><a href="">  SUMARNI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 02 Juli 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -351,6 +373,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">20 </td>
 									<td><b><a href="">  NURUL ANNIZAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>sinjai, 12 Juni 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -366,6 +389,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">21 </td>
 									<td><b><a href="">  NURUL HUMAERAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 18 Januari 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -381,6 +405,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">22 </td>
 									<td><b><a href="">  SYAIFUL RAHMAT </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 11 Februari 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -396,6 +421,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">23 </td>
 									<td><b><a href="">  FARHAD ANUGRAH PRATAMA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 25 Februari 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -411,6 +437,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">24 </td>
 									<td><b><a href="">  IRWANSYAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 23 Juli 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -426,6 +453,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">25 </td>
 									<td><b><a href="">  RISKY ADITYA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 14 Oktober 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -441,6 +469,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">26 </td>
 									<td><b><a href="">  FADHLUR RAHMAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 25 Mei 2008  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -456,6 +485,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">27 </td>
 									<td><b><a href="">  RAHMATUMAWADDAH </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 22 Juni 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -471,6 +501,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">28 </td>
 									<td><b><a href="">  MAGFIRAH BARMAN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 05 Desember 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -486,6 +517,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">29 </td>
 									<td><b><a href="">  YUSRIL MAHENDRA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 14 April 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -501,6 +533,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">30 </td>
 									<td><b><a href="">  SYAHRIL </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>Sinjai, 14 Februari 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -516,6 +549,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">31 </td>
 									<td><b><a href="">  FAZHANUL AWALIA </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 27 Juli 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -531,6 +565,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">32 </td>
 									<td><b><a href="">  MUH. AKBAR </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 19 Mei 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -546,6 +581,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">33 </td>
 									<td><b><a href="">  NURUL AYNUN </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 04 Oktober 2009  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -561,6 +597,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">34 </td>
 									<td><b><a href="">  NURUL ANUGRA ANGRIANI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 22 Juli 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -576,6 +613,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">35 </td>
 									<td><b><a href="">  REZKI ARUMI </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 10 Juli 2010  </td>
 									<td>Perempuan</td>
 									<td>Jalur Zonasi</td>
@@ -591,6 +629,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">36 </td>
 									<td><b><a href="">  NURUL AHMAD </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 01 Februari 2010  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -606,6 +645,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="odd">
 									<td class="sorting_1">37 </td>
 									<td><b><a href="">  ARMIN WALHIDAYAD </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 28 September 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Zonasi</td>
@@ -621,6 +661,7 @@ table td:nth-child(2) { pointer-events: none;
 								</tr><tr role="row" class="even">
 									<td class="sorting_1">38 </td>
 									<td><b><a href="">  MIFTAHUL KHAER </a> </b> </td>
+									<td><span>Diterima</span></td>
 									<td>SINJAI, 20 Desember 2009  </td>
 									<td>Laki - Laki</td>
 									<td>Jalur Pindah Tugas</td>
